@@ -70,6 +70,7 @@
           <button data-modal-open class="btn-hero" type="button">
             Заказать услугу
           </button>
+          <!--------- Модальне вікно ----------->
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
               <button class="modal-btn" data-modal-close>
@@ -77,6 +78,78 @@
                   <use href="./img/sprite.svg#close"></use>
                 </svg>
               </button>
+
+              <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+              <form class="form" autocomplete="off">
+                <label class="form-field">
+                  <span class="form-label">Имя</span>
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="name"
+                    placeholder=" "
+                  /><svg class="form-icon" width="18px" height="18px">
+                    <use href="./img/sprite.svg#name"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="form-label">Телефон</span>
+                  <input
+                    type="tel"
+                    class="form-input"
+                    name="tel"
+                    placeholder=" "
+                  />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./img/sprite.svg#mphone"></use>
+                  </svg>
+                </label>
+                <label class="form-field">
+                  <span class="form-label">Почта</span>
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    placeholder=" "
+                  />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./img/sprite.svg#email"></use>
+                  </svg>
+                </label>
+                <label class="form-textarea">
+                  <span class="form-label">Комментарий</span>
+                  <textarea
+                    class="textarea"
+                    name="comment"
+                    rows="5"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+
+                <label class="form-field-terms">
+                  <input
+                    class="input-terms hidden"
+                    type="checkbox"
+                    name="terms"
+                  />
+                  <span class="terms-checkbox"></span>
+                  <span class="form-terms-text">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a
+                      class="form-terms link"
+                      href="/index.html"
+                      target="_blank"
+                      aria-label="Условия договора"
+                    >
+                      Условия договора
+                    </a>
+                  </span>
+                </label>
+                <button type="submit" class="send" aria-label="Отправить">
+                  Отправить
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -87,7 +160,7 @@
       <section class="prior section">
         <div class="container">
           <!--скрити заголовок h2 за допомогою CSS-->
-          <h2 class="hide">Наши приимущества</h2>
+          <h2 class="hidden">Наши приимущества</h2>
           <ul class="list">
             <li class="list__item">
               <div class="icon-bg">
@@ -204,7 +277,7 @@
                         <use href="./img/sprite.svg#instagram"></use>
                       </svg>
                     </a>
-                  </li> 
+                  </li>
                   <li class="socials-item">
                     <a
                       class="socials-link socials-link-twitter link"
@@ -536,6 +609,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-button">
+          <b class="subscribe">Подпишитесь на рассылку</b>
+          <form class="footer-form">
+            <label class="footer-email">
+              <input
+                class="footer-email-input"
+                type="email"
+                name="newsletter"
+                autocomplete="on"
+                placeholder="E-mail"
+              />
+              <button class="footer-email-button" type="submit">
+                Подписаться
+                <svg class="footer-email-icon" width="24" height="24">
+                  <use href="./img/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
